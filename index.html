@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+
+<link rel="stylesheet" href="/css/stylesheet.css">
+
+<!-- below is the head and the header which will show the user what page they are on  -->
+</head>
+
+<body>
+<header>
+<h1> Delanie Pacheco </h1>
+
+<!--The paragraph below gives a brief insight on my time at KSU -->
+<p> This is my first year at KSU. I have always been excited to start at this school and I am excited for everything I will learn on my journey. </p>
+
+<img src= "/images/ksu.jpg" alt="logo" width="200" length="200">
+
+</header>
+<!-- Below is the navigation bar that allows users to go from page to page easily. -->
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+</nav>
+
+<main>
+<h2> Home Page </h2>
+<!--Below is a survey for students where the can submit their feelings on their first year -->
+<h3>STUDENT SURVEY</h3>
+        <p>How do you feel about your 1st year at Kennesaw State University?</p>
+        <form action="/submit-survey" method="post">
+            <input type="radio" id="amazing" name="feedback" value="Amazing">
+            <label for="Amazing">Amazing</label><br>
+
+            <input type="radio" id="good" name="feedback" value="Good">
+            <label for="good">Good</label><br>
+
+            <input type="radio" id="okay" name="feedback" value="Okay">
+            <label for="okay">Okay</label><br>
+
+            <input type="radio" id="bad" name="feedback" value="Bad">
+            <label for="bad">Bad</label><br><br>
+
+            <button type="submit">Submit Survery</button>
+        </form>
+</main>
+
+<footer>
+<p> 2024 Web Development Project </p>
+</footer>
+
+</body>
+</html>

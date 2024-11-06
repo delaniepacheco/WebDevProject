@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> About </title>
+<link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+
+<body>
+<header>
+<h1> About Delanie </h1>
+
+
+</header>
+<!--Below is the navigation bar that allows users to go from page to page easily. -->
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+</nav>
+<!-- below is a photo of me! -->
+ <img src="/images/Delanie.jpeg" alt="me" width="200" height="400" align="left" >
+<!-- The main tag displays the main information for the user. In the paragraph there is background on me. -->
+<main>
+<h2> About Me </h2>
+<p> My full name is Delanie Pacheco Quintana. I am a first generation Mexican American college student. I have not always known what I wanted to do as a career.
+I only knew that I had to make my parents proud. As the first daughter to my Mexican parents I have always felt the need to be successful so that I could help them out. 
+My parents did so much for me and provided me with everything I have ever needed. They did this with struggles of language barriers, missing their family, and culture differences.
+Since I started school I always tried by best because I loved making my parents proud. It was hard because I would feel like it was never enough. I always wanted to be better and better. 
+I grew up feeling pretty misunderstood by a lot of people around me. I truly did not see my future when I was younger. 
+
+As I started to get older and seeing life in a different way I have been able to realize that I truly love to learn. I love to learn new things and experience the world around me. 
+I love to travel and I love to meet new people and build meaningful connections. I am a very deep thinker, which is maybe why I always felt misunderstood. I felt like I would think of things others wouldn't.
+However, I realize thats not the case. I realized I had to be more open and let people actually get to know me. 
+
+I found my love for learning about technology when I started college back in 2020. It was something that was challenging for me. I wanted to know I could learn to do something new from start to finish.
+I then started to see how much I love to be a leader. I would like to have a leadership/management career in an IT field in the future. 
+I feel like I am a good team player and good at communicating to lead a team to success. 
+
+At this moment my goal is to get my bachelors degree and find myself a career where I can thrive and interact with people. 
+
+ </p>
+
+ 
+<!--The button below is associated with the JavaScript code that allows a user to display more or less information. -->
+<button id="toggleButton"> Show More</button>
+
+<div id="additionalInfo" style="display: none;">
+<p> I lost my dad August 31st of this year... Not too long ago. I hope to my Dad proud.. from where ever he may be. I love you Dad. I will continue to advance my skills and live my life to the fullest!</p>
+</div>
+</main>
+
+<script>
+document.getElementById('toggleButton').addEventListener('click', function() {
+const additionalInfo = document.getElementById('additionalInfo');
+if (additionalInfo.style.display == 'none') {
+additionalInfo.style.display = "block";
+this.innerText = "Show Less";
+} else {
+additionalInfo.style.display = "none";
+this.innerText = "Show More";
+}
+});
+</script>
+
+
+
+</main>
+
+<footer>
+<p> 2024 Web Development Project </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<title> Contact </title>
+<link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+
+<body>
+<!--The header below displays my contact information. -->
+<header>
+<h1> Contact </h1>
+<p> Email : dpachec6@students.kennesaw.edu 
+Phone number : 470-343-1305
+</p>
+
+
+</header>
+<!--Below is the navigation bar that allows users to go from page to page easily. -->
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+</nav>
+
+<!--The main tag below includes a form that allows a user to submit a message to me by entering their name, email and the message and there is a button that allows the user to submit the message once they are done filling out the form.  -->
+<main>
+<h2> Contact Page </h2>
+<form id="ContactForm">
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name" required><br><br>
+
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required><br><br>
+
+<label for="message"> Message:</label><br>
+<textarea id="message" name="message" required></textarea><br><br>
+
+<button type="submit">Submit</button>
+</form>
+<div id="formMessage"></div>
+
+<p> To contact me, please submit you name, email and the message you would like to send me! </p>
+</main>
+<!-- This JavaScript code allows the user to actually interact with the web page and click a button to submit their message -->
+<script>
+document.getElementById('ContactForm').addEventListener('submit', function(event) {
+event.preventDefault();
+
+const name= document.getElementById('name').value;
+const email= document.getElementById('email').value;
+const message= document.getElementById('message').value;
+
+if (name && email && message) {
+document.getElementById('formMessage').innerText = 'Thank you for reaching out! I will get back to you as soon as possible.' ;
+document.getElementById('contactForm').reset();
+} else {
+document.getElementById('formMessage').innerText = 'There was an error submitting your message. Please try again.' ;
+}
+});
+</script>
+
+<footer>
+<p> 2024 Web Development Project </p>
+</footer>
+
+</body>
+</html>
