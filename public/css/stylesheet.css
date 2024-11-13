@@ -5,13 +5,19 @@ padding: 0;
 text-align: center;
 }
 
-header {
+.container {
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
 background: #pink;
 text-align: center;
 color: pink;
 padding: 20px 0;
 font-weight: bold;
-font-size: 25px;
+font-size: 60px;
 }
 
 main {
@@ -22,12 +28,41 @@ text-align: center;
 
 p {
 font-family:cursive, lucida handwriting;
+padding-left: 20px;
+padding-right: 20px;
+margin-bottom: 20px;
 }
 
+p2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:pink;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rebeccapurple;
+    padding-right: 20px ;
+    padding-left: 20px;
+}
 nav{
 padding: 20px;
-text-align: left;
+text-align: center;
 font-family: cursive;
+background-color:pink;
+
+}
+nav ul li {
+    display: inline;
+   
+}
+nav ul li a {
+    color: black;
+    font-size: 25px ;
+    padding: 20px 20px;
+    text-transform: uppercase;
+  
 }
 
 footer {
@@ -57,3 +92,4 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
